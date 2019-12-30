@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back2"
+    android:layout_margin="15dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Blood.BloodSearchActivity"
+    tools:showIn="@layout/app_bar_blood_search">
+
+    <SearchView
+        android:id="@+id/bloodSearchViewId"
+        android:queryHint="Search blood group"
+        android:background="#f7f7f7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </SearchView>
+
+    <ListView
+        android:id="@+id/bloodListViewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#0a0909"
+        android:dividerHeight="4px"
+        android:listSelector="#7e638e"
+        />
+
+    <ImageView
+        android:id="@+id/noData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/no_data"/>
+
+</LinearLayout>

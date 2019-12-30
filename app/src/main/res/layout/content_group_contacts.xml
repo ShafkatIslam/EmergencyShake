@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back2"
+    android:layout_margin="15dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".GroupContact.GroupContactsActivity"
+    tools:showIn="@layout/app_bar_group_contacts">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="start"
+        android:background="#71b190"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group List"
+            android:textSize="20sp"
+            android:textColor="#151414"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerId1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/showAllGroupButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#373926"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Show"
+            android:textAllCaps="false"
+            android:textColor="#fafafa"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ListView
+            android:id="@+id/allGrouplistView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#0a0909"
+            android:dividerHeight="4px"
+            android:listSelector="#7e638e"
+            />
+
+        <ImageView
+            android:id="@+id/noData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/no_data"/>
+
+    </LinearLayout>
+
+</LinearLayout>

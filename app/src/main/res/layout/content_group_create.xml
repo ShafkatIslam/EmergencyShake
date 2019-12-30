@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back2"
+    android:layout_margin="15dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Group.GroupCreateActivity"
+    tools:showIn="@layout/app_bar_group_create">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="#71b190"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group List"
+            android:textSize="20sp"
+            android:textColor="#151414"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="3">
+
+        <ListView
+            android:id="@+id/allGrouplistView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#0a0909"
+            android:dividerHeight="4px"
+            />
+
+        <ImageView
+            android:id="@+id/noData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/no_data"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <!--<Button-->
+            <!--android:id="@+id/allGroupUpdateButton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="Update"-->
+            <!--android:textSize="15sp"-->
+            <!--android:background="#ead9cd"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_gravity="center"/>-->
+
+        <Button
+            android:id="@+id/allGroupSendButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:background="#ead9cd"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+   <!--<LinearLayout-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="wrap_content"-->
+       <!--android:orientation="vertical"-->
+       <!--android:gravity="center">-->
+
+       <!--<EditText-->
+           <!--android:id="@+id/groupCreateEditText"-->
+           <!--android:hint="Enter a Group Name"-->
+           <!--android:layout_marginBottom="10dp"-->
+           <!--android:layout_marginTop="10dp"-->
+           <!--android:layout_width="300dp"-->
+           <!--android:layout_height="wrap_content"-->
+           <!--android:background="@drawable/react1"-->
+           <!--android:drawableLeft="@drawable/group_group"-->
+           <!--android:drawablePadding="16dp"-->
+           <!--android:paddingBottom="16dp"-->
+           <!--android:paddingLeft="20dp"-->
+           <!--android:paddingTop="16dp"-->
+           <!--android:textColor="#fff"-->
+           <!--android:textColorHint="#ffffff"/>-->
+
+       <!--<Button-->
+           <!--android:id="@+id/createButton"-->
+           <!--android:layout_width="150dp"-->
+           <!--android:layout_height="wrap_content"-->
+           <!--android:background="@drawable/react1"-->
+           <!--android:drawablePadding="16dp"-->
+           <!--android:paddingBottom="16dp"-->
+           <!--android:paddingLeft="2dp"-->
+           <!--android:paddingTop="16dp"-->
+           <!--android:textAllCaps="false"-->
+           <!--android:layout_marginRight="5dp"-->
+           <!--android:text="Create"/>-->
+
+
+   <!--</LinearLayout>-->
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back2"
+    android:layout_margin="15dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ContactAll.EventActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/app_bar_event">
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recycler_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/empty_notes_view"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="@dimen/margin_top_no_notes"-->
+        <!--android:fontFamily="sans-serif-light"-->
+        <!--android:text="@string/msg_no_notes"-->
+        <!--android:textColor="@color/msg_no_notes"-->
+        <!--android:textSize="@dimen/msg_no_notes" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="3">
+
+        <ListView
+            android:id="@+id/EventlistView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#0a0909"
+            android:dividerHeight="4px"
+            android:listSelector="#7e638e"
+            />
+
+        <ImageView
+            android:id="@+id/noData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/no_data"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <!--<Button-->
+        <!--android:id="@+id/allGroupUpdateButton"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="Update"-->
+        <!--android:textSize="15sp"-->
+        <!--android:background="#ead9cd"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:layout_gravity="center"/>-->
+
+        <Button
+            android:id="@+id/EventDeleteButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:background="#ead9cd"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

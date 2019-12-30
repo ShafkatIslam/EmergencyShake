@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back2"
+    android:layout_margin="15dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SendSms.SendSmsActivity"
+    tools:showIn="@layout/app_bar_send_sms">
+
+    <EditText
+        android:id="@+id/sendSmsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="#fffefe"
+        android:hint="Text Message"
+        android:gravity="start"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="#737070"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        >
+
+        <Button
+            android:id="@+id/individualSend"
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+            android:text="Send Individually"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/groupSend"
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:text="Send Groupwise"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+    <group
+        android:id="@+id/nav_g1"
+        android:checkableBehavior="single">
+        <item
+
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/home"
+            >
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/nav_g2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/emergenyList"
+            android:title="Emergency List"
+            android:icon="@drawable/emergency">
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/nav_g3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/emergenySms"
+            android:title="Emergency Sms"
+            android:icon="@drawable/emergency_sms">
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/nav_g4"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/contactList"
+            android:title="Contact List"
+            android:icon="@drawable/contact_lists">
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/nav_g5"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/groupCreate"
+            android:title="Group Create"
+            android:icon="@drawable/group_creates">
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/nav_g6"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/groupContacts"
+            android:title="Group Contacts"
+            android:icon="@drawable/group_contacts">
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/nav_g7"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/sendSms"
+            android:title="Send Sms"
+            android:icon="@drawable/send_sms1">
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/nav_g8"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/reminder"
+            android:title="Reminder"
+            android:icon="@drawable/reminders">
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/nav_g9"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/blood"
+            android:title="Search Blood"
+            android:icon="@drawable/blood_search">
+        </item>
+    </group>
+    </group>
+
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:title="Communicate"
+                    >
+
+                </item>
+
+                <group
+                    android:id="@+id/nav_g10"
+                    android:checkableBehavior="single">
+
+                    <item
+                        android:id="@+id/settings"
+                        android:title="Settings"
+                        android:icon="@drawable/settings">
+                    </item>
+
+                </group>
+
+                <group
+                    android:id="@+id/nav_g11"
+                    android:checkableBehavior="single">
+
+                    <item
+                        android:id="@+id/comments"
+                        android:title="Comments"
+                        android:icon="@drawable/comments">
+                    </item>
+                </group>
+
+                <group
+                    android:id="@+id/nav_g12"
+                    android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/aboutUs"
+                        android:title="About us"
+                        android:icon="@drawable/about_us">
+                    </item>
+                </group>
+
+            </group>
+
+</menu>
