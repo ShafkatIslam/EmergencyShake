@@ -1,5 +1,5 @@
 # EmergencyShake
 
-Students can give examination (MCQ & Written) in real time in a unique question paper and teachers can evaluate the students by checking their answer scripts. Admin will control the total process and handle all the students & teachers. 
+Send Sms for Emergency Help through Shaking Mobile 
 
-Tools and Technologies used : Android Studio, MySQL Database, PHP (For Website & API)
+Tools and Technologies used : Android Studio, SQLite Database 
